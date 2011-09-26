@@ -1,0 +1,15 @@
+{
+  "background_scripts": [
+    "main.js"
+  ],
+  "content_scripts": [
+    "tree.js"
+  ],
+  "version": "1.0", 
+  "browser_button": {
+    "tooltipText": "Kango Extension", 
+    "icon": "icons/icon16.png"
+  }, 
+  "name": "jQueryDemo", 
+  "description": ""
+}
