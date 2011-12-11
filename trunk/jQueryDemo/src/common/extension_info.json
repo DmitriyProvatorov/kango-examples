@@ -11,5 +11,7 @@
     "icon": "icons/icon16.png"
   }, 
   "name": "jQueryDemo", 
-  "description": ""
+  "description": "jQuery Demo",
+  "creator": "KangoExtensions",
+  "homepage_url": "http://kangoextensions.com/"
 }
