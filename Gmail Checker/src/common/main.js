@@ -2,7 +2,7 @@
 	var self = this;
 	self.refresh();	
 	kango.ui.browserButton.addEventListener(kango.ui.browserButton.event.Command, function() {
-		kango.browser.navigateInTab('https://mail.google.com/');
+		kango.browser.tabs.create({url: 'https://mail.google.com/'});
 		self.refresh();
 	});
 	window.setInterval(function(){self.refresh()}, self._refreshTimeout);
@@ -15,13 +15,13 @@ GmailChecker.prototype = {
 	
 	_setOffline: function() {
 		kango.ui.browserButton.setTooltipText('Offline');
-		kango.ui.browserButton.setIcon('icons/icon16_gray.png');
+		kango.ui.browserButton.setIcon('icons/button_gray.png');
 		kango.ui.browserButton.setBadgeValue(0);
 	},
 	
 	_setUnreadCount: function(count) {
 		kango.ui.browserButton.setTooltipText('Unread count: ' + count);
-		kango.ui.browserButton.setIcon('icons/icon16.png');
+		kango.ui.browserButton.setIcon('icons/button.png');
 		kango.ui.browserButton.setBadgeValue(count);
 	},
 	
