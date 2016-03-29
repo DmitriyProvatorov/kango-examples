@@ -1,0 +1,1 @@
+Samples moved to https://github.com/KangoExtensions/kango-samples
